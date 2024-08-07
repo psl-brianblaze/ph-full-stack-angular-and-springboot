@@ -250,9 +250,9 @@ ng version
 
 ng help
 
-ng new ecommerce-ui-app
+ng new angular-hello-world
 
-cd ecommerce-ui-app
+cd angular-hello-world
 
 # Run the application
 ng serve 
@@ -261,11 +261,8 @@ ng serve
 
 ng serve --open
 
-cd ecommerce-ui-app/src/app 
+cd angular-hello-world/src/app
 
-# Create a new component
-
-ng generate component sales-person-list
 
 ```
 
@@ -285,8 +282,13 @@ cd sales-ui-app
 
 ng serve --open
 
+cd sales-ui-app/src/app
+
 # Create a new component
 ng generate component sales-person-list
+
+# Create a new component
+ng generate class SalesPerson
 
 ```
 
