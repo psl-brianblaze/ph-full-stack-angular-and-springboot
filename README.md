@@ -30,6 +30,23 @@
 ![Alt text](docs/images/angular-history.png)
 ![Alt text](docs/images/angular-history-2.png)
 
+## Angular Development
+
+- For the development, we can develop using various languages
+    - JavaScript: extremely popular
+    - ECMAScript 6: modern version of JavaScript ES6, ES9
+    - TypeScript: add optional types to JavaScript
+
+- Relationships:
+    - TypeScript is a superset of JavaScript and ECMAScript
+
+      ![Alt text](docs/images/typescript.png)
+
+- Component based framework.
+- Clean separation of template coding and application logic.
+- Built-in support for data-binding and dependency injection.
+- Supports responsive web design and modern frameworks.
+
 ## Why the usage of frameworks instead of DIY with JavaScript,
 
 - Hard to maintain and manage the code
@@ -62,7 +79,7 @@
 - Final setup
   link: [Setup](https://github.com/darbyluv2code/fullstack-angular-and-springboot/blob/master/install-angular-tools/ms-windows/install-ms-windows.md)
 
-## Whats is TypeScript?
+## What is TypeScript?
 
 - TypeScript is a superset of JavaScript
     - Language developed by Microsoft in 2012
@@ -73,17 +90,6 @@
 - Add support for classes, interfaces, and modules
 - Classes, interfaces, and modules help in organizing the code
 - Website link: [TypeScript](https://www.typescriptlang.org/)
-
-## Angular Development
-
-- For the development, we can develop using various languages
-    - JavaScript: extremely popular
-    - ECMAScript 6: modern version of JavaScript ES6, ES9
-    - TypeScript: add optional types to JavaScript
-- Relationships:
-    - TypeScript is a superset of JavaScript and ECMAScript
-
-      ![Alt text](docs/images/typescript.png)
 
 ## Development process for typescript
 
@@ -193,6 +199,100 @@ node 01-basics.js
   
   let user = { firstName: "Jane", lastName: "User" };
   ```
+
+## Angular Architecture
+
+![Alt text](docs/images/angular-architecture.png)
+
+- The architecture consists of the following components
+    - Modules
+    - Components
+    - Templates
+    - Metadata
+    - Data binding
+    - Directives
+    - Services
+    - Dependency injection
+    - Routing
+    - Observables
+
+## Key components of Angular
+
+| Term          | Description                                                                                                                     |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Components    | Main player and has 2 parts: 1. View for user interface, 2. Class that contains application logic / event handling for the view |
+| View Template | HTML that determines the UI of the application                                                                                  |
+| Directives    | Add behavior to an existing DOM element or transform the DOM element                                                            |
+| Services      | Provides functionality that can be shared across the components                                                                 |
+| Modules       | Group of related components, directives, services, and pipes that are related to an application                                 |
+
+## Application UI Composition
+
+![Alt text](docs/images/ui-component.png)
+
+## Application Interaction
+
+![Alt text](docs/images/ui-component.png)
+
+## Angular project
+
+- It consists of multiple files: HTML, CSS, TypeScript, Configuration, Images, and other assets
+
+## Create an Angular project
+
+- Create an Angular project using the following command,
+
+```bash
+
+npm install --location=global @angular/cli@14.0.7
+
+ng version
+
+ng help
+
+ng new ecommerce-ui-app
+
+cd ecommerce-ui-app
+
+# Run the application
+ng serve 
+
+# open
+
+ng serve --open
+
+cd ecommerce-ui-app/src/app 
+
+# Create a new component
+
+ng generate component sales-person-list
+
+```
+
+## Angular loading principle
+
+![Alt text](docs/images/angular-loading-basics.png)
+
+## Angular sales project setup
+
+- The project setup is done using the following steps,
+
+```bash
+
+ng new sales-ui-app
+
+cd sales-ui-app
+
+ng serve --open
+
+# Create a new component
+ng generate component sales-person-list
+
+```
+
+## Angular Coding
+
+- Uses public properties to bind to the view entirely different from the java world
 
 ## Reference
 
