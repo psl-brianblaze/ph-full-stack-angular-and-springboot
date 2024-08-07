@@ -158,15 +158,41 @@ node 01-basics.js
 
 ## Typescript brush up
 
-- The [01-basics.ts](typescript-beginner-tutorial/01-basics/01-basics.ts) consists of the basic typescript code for the beginners
+- The [01-basics.ts](typescript-beginner-tutorial/01-basics/01-basics.ts) consists of the basic
+  typescript code for the beginners
 - The basics of code organization, [modules](typescript-beginner-tutorial/02-modules/Driver.ts)
 - Supports inheritance, [inheritance](typescript-beginner-tutorial/03-inheritance/Driver.ts)
-  - The class can inherit the properties and methods from the parent class
-  - The class can override the properties and methods from the parent class
-  - Subclasses can have their own properties and methods and can add new properties and methods
-  - Support abstract classes
-- It only supports single inheritance
-- Can implement multiple interfaces
+    - The class can inherit the properties and methods from the parent class
+    - The class can override the properties and methods from the parent class
+    - Subclasses can have their own properties and methods and can add new properties and methods
+    - Support abstract classes
+    - It only supports single inheritance
+    - Can implement multiple interfaces
+- Abstract classes, [abstract classes](typescript-beginner-tutorial/04-abstract-classes/Driver.ts)
+    - Abstract classes cannot be instantiated
+    - Abstract classes can have abstract methods
+    - Abstract methods must be implemented in the concrete subclass
+- Interfaces, [interfaces](typescript-beginner-tutorial/05-interfaces/Driver.ts)
+    - Define an interface with a method contract
+    - Classes can implement the interface according to the contract
+    - A class can implement multiple interfaces
+    - It can also use interfaces to support contracts with properties
+
+  ```typescript
+  
+  // interface with properties example
+  
+  interface Person {
+    firstName: string;
+    lastName: string;
+  }
+  
+  function greeter(person: Person) {
+    return "Hello, " + person.firstName + " " + person.lastName;
+  }
+  
+  let user = { firstName: "Jane", lastName: "User" };
+  ```
 
 ## Reference
 
