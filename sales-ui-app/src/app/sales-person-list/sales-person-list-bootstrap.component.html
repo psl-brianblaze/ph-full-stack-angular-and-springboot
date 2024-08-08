@@ -6,16 +6,24 @@
     <th>Last Name</th>
     <th>Email</th>
     <th>Sales Volume</th>
+    <th>Met Quota?</th>
   </tr>
   </thead>
 
   <tbody>
+
   <!-- Looping in ngfor -->
   <tr *ngFor="let salesPerson of salesPersonList">
     <td>{{ salesPerson.firstName }}</td>
     <td>{{ salesPerson.lastName }}</td>
     <td>{{ salesPerson.email }}</td>
-    <td>{{ salesPerson.salesVolume }}</td>
+    <td>{{ salesPerson.salesVolume | currency: 'USD' }}</td>
+
+    <td>
+      <div *ngIf="salesPerson.salesVolume >= 60000; else elseBlock">Yes</div>
+      <ng-template #elseBlock>No</ng-template>
+    </td>
+
   </tr>
   </tbody>
 

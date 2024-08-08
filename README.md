@@ -303,6 +303,50 @@ npm i bootstrap@5.3.3
 ## Angular Coding
 
 - Uses public properties to bind to the view entirely different from the java world
+- Most commonly used structural directives are `*ngIf` and `*ngFor`,
+  example: [sales-person-list-bootstrap.component.html](sales-ui-app/src/app/sales-person-list/sales-person-list-bootstrap.component.html)
+- Also, there are other directives such
+  as, [angular-directives](https://angular.io/guide/structural-directives)
+    - `ngClass`, `ngStyle`, `ngModel`, `ngForm`, `ngSubmit`,
+    - `ngModelGroup`, `ngSwitch`, `ngSwitchCase`, `ngSwitchDefault`, `ngTemplateOutlet`,
+    - `ngContainer`, `ngContent`, `ngForOf`, `ngForTrackBy`, `ngForTemplate`, `ngIf`,
+    - `ngIfThen`, `ngIfElse`, `ngPlural`, `ngPluralCase`, `ngStyle`, `ngClass`,
+    - `ngComponentOutlet`, `ngTemplateOutlet`, `ngContainer`, `ngContent`,
+    - `ngNonBindable`, `ngProject`
+
+  ```angular2html
+  
+  <!-- ngIf and ngfor example -->
+  <div *ngIf="salesPersons.length > 0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Sales</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of salesPersons">
+          <td>{{person.firstName}}</td>
+          <td>{{person.lastName}}</td>
+          <td>{{person.email}}</td>
+          <td>{{person.salesVolume}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  ```
+- Currency format is done using the `currency` [pipe](https://angular.io/api/common/CurrencyPipe)
+
+  ```angular2html
+  
+  <td>{{person.salesVolume | currency:'USD'}}</td>
+    
+  ```
+- Other pipes available are: `date`, `decimal`, `percent`, `json`, `async`, `uppercase`, `lowercase`, `titlecase`, `slice`, `number`, `percent`, `currency`, `date`, `i18nPlural`, `i18nSelect`, `async`, `keyvalue`, `json`, `slice`, `titlecase`, `uppercase`, `lowercase`, `date`, `number`, `percent`, `currency`, `i18nPlural`, `i18nSelect`, `keyvalue`
 
 ## Reference
 
