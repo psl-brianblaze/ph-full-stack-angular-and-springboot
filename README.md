@@ -348,6 +348,17 @@ npm i bootstrap@5.3.3
   ```
 - Other pipes available are: `date`, `decimal`, `percent`, `json`, `async`, `uppercase`, `lowercase`, `titlecase`, `slice`, `number`, `percent`, `currency`, `date`, `i18nPlural`, `i18nSelect`, `async`, `keyvalue`, `json`, `slice`, `titlecase`, `uppercase`, `lowercase`, `date`, `number`, `percent`, `currency`, `i18nPlural`, `i18nSelect`, `keyvalue`
 
+- In your component, you can make use of [ngClass] to conditionally apply styles to an element.
+
+  ```angular2html
+   
+    <div [ngClass]="{
+       'class1': condition  (the true condition),
+       'class2': !condition (else)
+    }">
+  
+  ```
+
 ## Reference
 
 - Project reference: git clone https://github.com/darbyluv2code/fullstack-angular-and-springboot.git

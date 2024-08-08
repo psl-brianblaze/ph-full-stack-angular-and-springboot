@@ -13,7 +13,7 @@
   <tbody>
 
   <!-- Looping in ngfor -->
-  <tr *ngFor="let salesPerson of salesPersonList">
+  <tr *ngFor="let salesPerson of salesPersonList" [ngClass]="{'highlight': salesPerson.salesVolume >= 60000}">
     <td>{{ salesPerson.firstName }}</td>
     <td>{{ salesPerson.lastName }}</td>
     <td>{{ salesPerson.email }}</td>
