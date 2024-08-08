@@ -262,8 +262,6 @@ ng serve
 ng serve --open
 
 cd angular-hello-world/src/app
-
-
 ```
 
 ## Angular loading principle
@@ -287,8 +285,18 @@ cd sales-ui-app/src/app
 # Create a new component
 ng generate component sales-person-list
 
-# Create a new component
+# Create a new class for the sales person
 ng generate class SalesPerson
+```
+
+## Bootstrap files for CSS
+
+- Bootstrap website: [Bootstrap](https://getbootstrap.com/)
+- Instructions are provided in the website to install the bootstrap
+
+```bash
+
+npm i bootstrap@5.3.3
 
 ```
 
