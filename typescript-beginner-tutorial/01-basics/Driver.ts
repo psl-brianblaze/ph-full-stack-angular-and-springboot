@@ -122,6 +122,8 @@ class Employee {
 
 let employee = new Employee("Darby", 30);
 
+employee.printDetails();
+
 // Accessors
 // getter and setter
 // getter: get the value of the property
@@ -167,8 +169,8 @@ console.log(personAccessor.name);
 // The properties can be defined in the constructor
 
 class PersonConstructor {
-  constructor(private name: string,
-              private age: number) {
+  constructor(readonly name: string,
+              readonly age: number) {
   }
 
   printDetails() {

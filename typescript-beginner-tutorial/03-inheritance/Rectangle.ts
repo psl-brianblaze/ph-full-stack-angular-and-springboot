@@ -2,8 +2,8 @@ import {Shape} from "./Shape";
 
 export class Rectangle extends Shape {
 
-  constructor(private theX: number,
-              private theY: number,
+  constructor(readonly theX: number,
+              readonly theY: number,
               private _width: number,
               private _length: number) {
     super(theX, theY);

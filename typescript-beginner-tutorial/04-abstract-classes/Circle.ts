@@ -2,7 +2,7 @@ import {Shape} from "./Shape";
 
 export class Circle extends Shape {
 
-  constructor(theX: number, private theY: number, private _radius: number) {
+  constructor(readonly theX: number, readonly theY: number, private _radius: number) {
     super(theX, theY);
   }
 

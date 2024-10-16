@@ -94,26 +94,30 @@
 ## Development process for typescript
 
 - File have the .ts extension
-- Add it in the 01-basics.ts file
+- Add it in the Driver.ts file
 
 ```typescript
+
 console.log("Hello World");
+
 ```
 
 - Compile the file using the following command,
 
 ```bash
-tsc 01-basics.ts
+
+tsc Driver.ts
 
 # Provide the flag to avoid the errors
-tsc --noEmitOnError 01-basics.ts
+tsc --noEmitOnError Driver.ts
 
 # Compiler flag
-tsc --target ES5 --noEmitOnError 01-basics.ts
+tsc --target ES5 --noEmitOnError Driver.ts
 
 ```
 
 - To many compiler configs will be difficult to manage
+
 - Create a tsconfig.json file
 
 ```json
@@ -136,15 +140,13 @@ tsc
 
 ```
 
-``
-
-- The above command will generate the 01-basics.js file and the process is called `transpiling`
+- The above command will generate the 01-basics.js file and the process is called `transpiling` to generate the JavaScript file
 
 - Run the file using the following command,
 
 ```bash
 
-node 01-basics.js
+node Driver.js
 
 ```
 
@@ -164,7 +166,7 @@ node 01-basics.js
 
 ## Typescript brush up
 
-- The [01-basics.ts](typescript-beginner-tutorial/01-basics/01-basics.ts) consists of the basic
+- The [Driver.ts](typescript-beginner-tutorial/01-basics/Driver.ts) consists of the basic
   typescript code for the beginners
 - The basics of code organization, [modules](typescript-beginner-tutorial/02-modules/Driver.ts)
 - Supports inheritance, [inheritance](typescript-beginner-tutorial/03-inheritance/Driver.ts)
@@ -178,7 +180,7 @@ node 01-basics.js
     - Abstract classes cannot be instantiated
     - Abstract classes can have abstract methods
     - Abstract methods must be implemented in the concrete subclass
-- Interfaces, [interfaces](typescript-beginner-tutorial/05-interfaces/Driver.ts)
+- Interfaces, [interfaces](typescript-beginner-tutorial/05-interface/Driver.ts)
     - Define an interface with a method contract
     - Classes can implement the interface according to the contract
     - A class can implement multiple interfaces
@@ -240,8 +242,6 @@ node 01-basics.js
 
 ## Create an Angular project
 
-- Create an Angular project using the following command,
-
 ```bash
 
 npm install --location=global @angular/cli@14.0.7
@@ -270,8 +270,6 @@ cd angular-hello-world/src/app
 
 ## Angular sales project setup
 
-- The project setup is done using the following steps,
-
 ```bash
 
 ng new sales-ui-app
@@ -294,11 +292,11 @@ ng generate class SalesPerson
 - Bootstrap website: [Bootstrap](https://getbootstrap.com/)
 - Instructions are provided in the website to install the bootstrap
 
-```bash
-
-npm i bootstrap@5.3.3
-
-```
+  ```bash
+  
+  npm i bootstrap@5.3.3
+  
+  ```
 
 ## Angular Coding
 
